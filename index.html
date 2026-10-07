@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Aulia Putri Arfiyanti</title>
+
+    <!-- Menghubungkan HTML dengan javascript -->
+    <link rel="stylesheet" href="script.js">
+
+     <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            Aulia<span>.</span>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-text">
+
+                <small>Halo, saya</small>
+
+                <h1>
+                    Aulia Putri <span>Arfiyanti</span>
+                </h1>
+
+                <h2>
+                    Pelajar PPLG | Web Development
+                </h2>
+
+                <p>
+                    Saya adalah siswa kelas X PPLG 1 di
+                    SMK Negeri 2 Magelang yang tertarik
+                    dengan dunia pemrograman, teknologi,
+                    dan pengembangan website.
+                </p>
+
+                <a href="#about" class="btn">
+                    Kenali Saya →
+                </a>
+
+            </div>
+
+
+            <div class="profile-box">
+
+                <div class="profile-photo">
+
+                    <img src="WhatsApp Image 2026-09-27 at 20.47.47.jpeg" alt="aulia">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>Tentang Saya</h2>
+            <p>Kenali saya lebih dekat</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-card">
+
+                <h3>🎓 Pendidikan</h3>
+
+                <p>
+                    Saat ini saya menempuh pendidikan di
+                    <b>SMK Negeri 2 Magelang</b>,
+                    jurusan <b>Pengembangan Perangkat Lunak
+                    dan Gim (PPLG)</b>, kelas
+                    <b>X PPLG 1</b>.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <h3>💻 Minat</h3>
+
+                <p>
+                    Saya memiliki ketertarikan pada dunia
+                    teknologi, pemrograman, desain website,
+                    dan ingin terus belajar membuat berbagai
+                    aplikasi serta website yang menarik.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIODATA -->
+    <section id="biodata">
+
+        <div class="section-title">
+            <h2>Biodata</h2>
+            <p>Informasi singkat tentang saya</p>
+        </div>
+
+        <div class="biodata">
+
+            <div class="data-item">
+                <strong>Nama Lengkap</strong>
+                <span>Aulia Putri Arfiyanti</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Nama Panggilan</strong>
+                <span>Aulia</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Tempat, Tanggal Lahir</strong>
+                <span>28 Juni 2011</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Sekolah</strong>
+                <span>SMK Negeri 2 Magelang</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Jurusan</strong>
+                <span>PPLG - Pengembangan Perangkat Lunak dan Gim</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Kelas</strong>
+                <span>X PPLG 1</span>
+            </div>
+
+            <div class="data-item">
+                <strong>Email</strong>
+                <span>yaaaulia11@gmail.com</span>
+            </div>
+
+            <div class="data-item">
+                <strong>No. Telepon</strong>
+                <span>081392189428</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section id="contact">
+
+        <div class="section-title">
+            <h2>Kontak</h2>
+            <p>Hubungi saya</p>
+        </div>
+
+        <div class="contact-box">
+
+            <h3>Let's Connect! 💌</h3>
+
+            <p>
+                Jika ingin menghubungi saya, silakan
+                melalui email berikut:
+            </p>
+
+            <p class="email">
+                yaaaulia11@gmail.com
+            </p>
+
+            <p>
+                📱 081392189428
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 <span>Aulia Putri Arfiyanti</span>.
+        </p>
+
+    </footer>
+const session = await vscode.authentication.getSession('github-enterprise', ['repo'], {
+    createIfNone: true,
+    authorizationServer: vscode.Uri.parse('https://github.example.com/login/oauth')
+});
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+         /* =========================
+           RESET & DASAR
+        ========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #151f8d;
+            color: rgb(105, 207, 211);
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 16, 32, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #7e90cc;
+        }
+
+        .logo span {
+            color: #9b8cff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #56afd3;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 8% 50px;
+            background:
+                radial-gradient(circle at top left, #6971be, transparent 40%),
+                radial-gradient(circle at bottom right, #140846, transparent 40%),
+                #0f1020;
+        }
+
+        .hero-container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text small {
+            color: #6ca3cf;
+            font-size: 18px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin: 10px 0;
+            line-height: 1.1;
+        }
+
+        .hero-text h1 span {
+            color: #7ecbff;
+        }
+
+        .hero-text h2 {
+            color: #b9cfd9;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: #c9c7d9;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            background: linear-gradient(135deg, #7ea0ff, #9b8cff);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 8px 25px rgba(126, 197, 255, 0.25);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(126, 139, 255, 0.4);
+        }
+
+        /* =========================
+           FOTO PROFILE
+        ========================== */
+        .profile-box {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7e87ff, #948cff);
+            padding: 8px;
+            box-shadow: 0 0 50px rgba(255, 126, 179, 0.25);
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #252640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #aaa;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* =========================
+           SECTION
+        ========================== */
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            color: #7ebaff;
+        }
+
+        .section-title p {
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================== */
+        .about {
+            background: #151629;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .about-card {
+            background: #20213a;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #303151;
+            transition: 0.3s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-7px);
+            border-color: #7e87ff;
+        }
+
+        .about-card h3 {
+            color: #9b8cff;
+            margin-bottom: 20px;
+        }
+
+        .about-card p {
+            color: #c8c7d8;
+            line-height: 1.8;
+        }
+
+        /* =========================
+           BIODATA
+        ========================== */
+        .biodata {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .data-item {
+            display: flex;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+            background: #20213a;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .data-item:hover {
+            background: #292b49;
+            transform: translateX(5px);
+        }
+
+        .data-item strong {
+            width: 180px;
+            color: #7e8bff;
+        }
+
+        .data-item span {
+            color: #ddd;
+        }
+
+        /* =========================
+           SKILL
+        ========================== */
+        .skills {
+            background: #151629;
+        }
+
+        .skill-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            margin-bottom: 25px;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .skill-name span:first-child {
+            color: white;
+        }
+
+        .skill-name span:last-child {
+            color: #7ebaff;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background: #2c2d48;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #7ea7ff, #8cb0ff);
+        }
+
+        .html {
+            width: 80%;
+        }
+
+        .css {
+            width: 70%;
+        }
+
+        .coding {
+            width: 60%;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+        .contact-box {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            background: #20213a;
+            padding: 40px;
+            border-radius: 25px;
+        }
+
+        .contact-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #7eb6ff;
+        }
+
+        .contact-box p {
+            color: #c9c7d9;
+            margin-bottom: 10px;
+        }
+
+        .email {
+            color: #9b8cff;
+            font-weight: bold;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0a0b16;
+            color: #888;
+        }
+
+        footer span {
+            color: #7eb6ff;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .hero-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-text h2 {
+                font-size: 19px;
+            }
+
+            .profile-box {
+                width: 230px;
+                height: 230px;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .data-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .data-item strong {
+                width: auto;
+            }
+        }
